@@ -99,14 +99,19 @@ int main()
 
 	int count = 0;
 
-	cout << "Ньютона:" <<"\t"<< test.metNewton(-5, 0.000001, count) << endl;
+	double e = 0.1;
+
+	cout << "Ньютона:" <<"\t"<< test.metNewton(-5, e, count) << endl;
 	cout << "Количество шагов: "<< count <<endl;
 	count = 0;
-	cout << "Простых итераций:" << test.metSimpleIter(-4, 0.000001, mFX, count) << endl;
-	cout << "Количество шагов: " << count << endl;
-	count = 0;
-	cout <<"Половинного деления:"<< test.metHalfDiv(-5,-4.5,0.000001, count) << endl ;
+/*
+	cout <<"Половинного деления:"<< test.metHalfDiv(2,4,e, count) << endl ;
 	cout << "Количество шагов: " << count << endl;
 	count = 0;
 
+	cout << "Простых итераций:" << test.metSimpleIter(-4, e, mFX, count) << endl;
+	cout << "Количество шагов: " << count << endl;
+	count = 0;
+*/
+	
 }

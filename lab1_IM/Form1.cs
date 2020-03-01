@@ -55,6 +55,8 @@ namespace lab1_IM
 
             double[] mid = sample.getMid();
 
+            this.textBox6.Text = sample.Sqrx.ToString();
+
             double[] fre = sample.getFreque();
 
             for (int i = 0; i < inter; ++i)
@@ -67,6 +69,7 @@ namespace lab1_IM
         {
             init();
             DrawGist();
+            
         }
     }
 }

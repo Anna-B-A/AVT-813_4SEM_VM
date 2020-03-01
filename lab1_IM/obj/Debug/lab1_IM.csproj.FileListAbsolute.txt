@@ -18,3 +18,12 @@ F:\lab1_IM\obj\Debug\lab1_IM.csproj.GenerateResource.cache
 F:\lab1_IM\obj\Debug\lab1_IM.csproj.CoreCompileInputs.cache
 F:\lab1_IM\obj\Debug\lab1_IM.exe
 F:\lab1_IM\obj\Debug\lab1_IM.pdb
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\bin\Debug\lab1_IM.exe.config
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\bin\Debug\lab1_IM.exe
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\bin\Debug\lab1_IM.pdb
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\obj\Debug\lab1_IM.csprojAssemblyReference.cache
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\obj\Debug\lab1_IM.Gen.resources
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\obj\Debug\lab1_IM.Properties.Resources.resources
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\obj\Debug\lab1_IM.csproj.GenerateResource.cache
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\obj\Debug\lab1_IM.exe
+C:\Users\Madius\AVT-813_4SEM_VM\lab1_IM\obj\Debug\lab1_IM.pdb
