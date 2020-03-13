@@ -1,6 +1,19 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
+
+double moda(double *x1, double* x2,int n)
+{
+	double sum = 0;
+
+	for (int i = 0; i < n; ++i)
+	{
+		sum += abs(x2[i] - x1[i]);
+	}
+
+	return sum;
+}
 
 double* metGausa(double** mat, double* vet,int n)
 {
@@ -52,7 +65,7 @@ double* simIter(double** mat, double* vet, int n,double e)
 			else 
 				newMatr[i][j] = (-1)*(mat[i][j] / mat[i][i]);
 		}
-	
+
 	for (size_t i = 0; i < n; i++)
 	{
 		newVer[i] = vet[i] / mat[i][i];
@@ -72,6 +85,11 @@ double* simIter(double** mat, double* vet, int n,double e)
 			Xk2[i] = newVer[i] + sum;
 		}
 	
+		if (moda(Xk, Xk2,n) <= e)
+		{
+			return Xk2;
+		}
+
 		for (int i = 0; i < n; i++)
 		{
 			Xk[i] = Xk2[i];
@@ -82,17 +100,26 @@ double* simIter(double** mat, double* vet, int n,double e)
 
 int main()
 {
-
+	setlocale(LC_ALL, "ru");
 	double** matrix = new double*[3];
 	double vector[3] = { 17,16,20 };
-	double* res;
+	double* res,*res2;
 	
-		matrix[0] = new double[3]{ 1,1,15};
-		matrix[1] = new double[3]{ 15,0,1 };
-		matrix[2] = new double[3]{ 4,15,1 };
-
-	res = metGausa(matrix, vector, 3);
+		matrix[0] = new double[3]{ 30,1,15};
+		matrix[1] = new double[3]{ 15,40,1 };
+		matrix[2] = new double[3]{ 4,15,90 };
+			
+		cout << "Точный метод"<<endl;
+	res = simIter(matrix, vector, 3,0.1);
 
 	for (int i = 0; i < 3; i++)
 		cout << res[i] << endl;
+		cout <<  endl;
+
+		cout << "Итерационный метод" << endl;
+
+	res2 = metGausa(matrix, vector, 3);
+
+		for (int i = 0; i < 3; i++)
+			cout << res2[i] << endl;
 }
